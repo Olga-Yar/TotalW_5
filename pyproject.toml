@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "totalw5"
+version = "0.1.0"
+description = ""
+authors = ["Olga Yarosh <O_ll_y_a@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

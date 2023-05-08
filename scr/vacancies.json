@@ -1,0 +1,385 @@
+[
+  "Error: 403",
+  [
+    {
+      "id": "80000313",
+      "premium": false,
+      "name": "Ведущий инженер по сопровождению",
+      "department": {
+        "id": "3529-3529-prof",
+        "name": "Сбер для экспертов"
+      },
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "3",
+        "name": "Екатеринбург",
+        "url": "https://api.hh.ru/areas/3"
+      },
+      "salary": {
+        "from": null,
+        "to": 145000,
+        "currency": "RUR",
+        "gross": false
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2023-05-02T15:34:27+0300",
+      "created_at": "2023-05-02T15:34:27+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80000313",
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/80000313?host=hh.ru",
+      "adv_response_url": null,
+      "alternate_url": "https://hh.ru/vacancy/80000313",
+      "relations": [],
+      "employer": {
+        "id": "3529",
+        "name": "СБЕР",
+        "url": "https://api.hh.ru/employers/3529",
+        "alternate_url": "https://hh.ru/employer/3529",
+        "logo_urls": {
+          "240": "https://hhcdn.ru/employer-logo/5756157.png",
+          "90": "https://hhcdn.ru/employer-logo/5756156.png",
+          "original": "https://hhcdn.ru/employer-logo-original/1033849.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3529",
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Высшее техническое образование, предпочтительно в сфере ИТ. Знание стандарта ISO20000 и/или ITIL, принципов организации сопровождения АС. ",
+        "responsibility": "виртуализации и построения распределенных приложений (VMWare, Kubernetes, Docker, OpenShift, Nginx). Скриптовые языки (<highlighttext>Python</highlighttext>). Администрировать, внедрять и сопровождать АС - в масштабах..."
+      },
+      "contacts": null,
+      "schedule": null,
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "professional_roles": [
+        {
+          "id": "121",
+          "name": "Специалист технической поддержки"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between1And3",
+        "name": "От 1 года до 3 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      }
+    },
+    {
+      "id": "79225928",
+      "premium": false,
+      "name": "Бизнес-аналитик (аналитик данных)",
+      "department": {
+        "id": "3529-3529-prof",
+        "name": "Сбер для экспертов"
+      },
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": {
+        "from": 204284,
+        "to": null,
+        "currency": "RUR",
+        "gross": true
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2023-04-12T18:09:02+0300",
+      "created_at": "2023-04-12T18:09:02+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79225928",
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/79225928?host=hh.ru",
+      "adv_response_url": null,
+      "alternate_url": "https://hh.ru/vacancy/79225928",
+      "relations": [],
+      "employer": {
+        "id": "3529",
+        "name": "СБЕР",
+        "url": "https://api.hh.ru/employers/3529",
+        "alternate_url": "https://hh.ru/employer/3529",
+        "logo_urls": {
+          "240": "https://hhcdn.ru/employer-logo/5756157.png",
+          "90": "https://hhcdn.ru/employer-logo/5756156.png",
+          "original": "https://hhcdn.ru/employer-logo-original/1033849.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3529",
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Экспертное знание SQL, умение писать сложные запросы (джойны, группировки, оконные функции, хранимые процедуры). Владение <highlighttext>Python</highlighttext> для обработки данных, подключению к...",
+        "responsibility": "Взаимодействие со службами по разработке и поддержанию витрины ФОС вертикали. Написание и поддержание актуальности данных в витрине ФОС, разработка контрольных..."
+      },
+      "contacts": null,
+      "schedule": null,
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "professional_roles": [
+        {
+          "id": "134",
+          "name": "Финансовый аналитик, инвестиционный аналитик"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between1And3",
+        "name": "От 1 года до 3 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      }
+    },
+    {
+      "id": "80043816",
+      "premium": false,
+      "name": "DevOps",
+      "department": {
+        "id": "3529-3529-prof",
+        "name": "Сбер для экспертов"
+      },
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "66",
+        "name": "Нижний Новгород",
+        "url": "https://api.hh.ru/areas/66"
+      },
+      "salary": {
+        "from": 200000,
+        "to": 250000,
+        "currency": "RUR",
+        "gross": true
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2023-05-03T12:29:18+0300",
+      "created_at": "2023-05-03T12:29:18+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=80043816",
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/80043816?host=hh.ru",
+      "adv_response_url": null,
+      "alternate_url": "https://hh.ru/vacancy/80043816",
+      "relations": [],
+      "employer": {
+        "id": "3529",
+        "name": "СБЕР",
+        "url": "https://api.hh.ru/employers/3529",
+        "alternate_url": "https://hh.ru/employer/3529",
+        "logo_urls": {
+          "240": "https://hhcdn.ru/employer-logo/5756157.png",
+          "90": "https://hhcdn.ru/employer-logo/5756156.png",
+          "original": "https://hhcdn.ru/employer-logo-original/1033849.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3529",
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Хороший опыт по Git, Ansible, bash. Знание и опыт <highlighttext>Python</highlighttext> automation. Дополнительные преимущества: Опыт в настройке сетевого оборудования. ",
+        "responsibility": "Сопровождение и развитие облачных сервисов (Kubernetes, Object storage, terraform, ansible, etc). Автоматизация процессов (<highlighttext>Python</highlighttext>). Поддержка окружения для разработки (VM, инструменты..."
+      },
+      "contacts": null,
+      "schedule": null,
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "professional_roles": [
+        {
+          "id": "160",
+          "name": "DevOps-инженер"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between3And6",
+        "name": "От 3 до 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      }
+    },
+    {
+      "id": "79520430",
+      "premium": false,
+      "name": "Инженер поддержки и сопровождения лаборатории",
+      "department": {
+        "id": "3529-3529-prof",
+        "name": "Сбер для экспертов"
+      },
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": {
+        "from": 250000,
+        "to": 400000,
+        "currency": "RUR",
+        "gross": false
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2023-04-19T12:24:04+0300",
+      "created_at": "2023-04-19T12:24:04+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79520430",
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/79520430?host=hh.ru",
+      "adv_response_url": null,
+      "alternate_url": "https://hh.ru/vacancy/79520430",
+      "relations": [],
+      "employer": {
+        "id": "3529",
+        "name": "СБЕР",
+        "url": "https://api.hh.ru/employers/3529",
+        "alternate_url": "https://hh.ru/employer/3529",
+        "logo_urls": {
+          "240": "https://hhcdn.ru/employer-logo/5756157.png",
+          "90": "https://hhcdn.ru/employer-logo/5756156.png",
+          "original": "https://hhcdn.ru/employer-logo-original/1033849.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3529",
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "...Опыт работы с OpenStack. Опыт в настройке сетевого оборудования. Опыт администрирования Kubernetes. Опыт работы с Cloud Service Providers. Знание <highlighttext>Python</highlighttext>.",
+        "responsibility": "Взаимодействие с командами разработки и департаментом ИТ. Приемка оборудования проекта. Монтаж серверного и сетевого оборудования. Ведение технической документации. "
+      },
+      "contacts": null,
+      "schedule": null,
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "professional_roles": [
+        {
+          "id": "121",
+          "name": "Специалист технической поддержки"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between3And6",
+        "name": "От 3 до 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      }
+    },
+    {
+      "id": "79925740",
+      "premium": false,
+      "name": "Разработчик С ++",
+      "department": {
+        "id": "3529-3529-it",
+        "name": "Сбер. IT"
+      },
+      "has_test": false,
+      "response_letter_required": false,
+      "area": {
+        "id": "1",
+        "name": "Москва",
+        "url": "https://api.hh.ru/areas/1"
+      },
+      "salary": {
+        "from": 200000,
+        "to": 350000,
+        "currency": "RUR",
+        "gross": true
+      },
+      "type": {
+        "id": "open",
+        "name": "Открытая"
+      },
+      "address": null,
+      "response_url": null,
+      "sort_point_distance": null,
+      "published_at": "2023-04-28T15:28:54+0300",
+      "created_at": "2023-04-28T15:28:54+0300",
+      "archived": false,
+      "apply_alternate_url": "https://hh.ru/applicant/vacancy_response?vacancyId=79925740",
+      "insider_interview": null,
+      "url": "https://api.hh.ru/vacancies/79925740?host=hh.ru",
+      "adv_response_url": null,
+      "alternate_url": "https://hh.ru/vacancy/79925740",
+      "relations": [],
+      "employer": {
+        "id": "3529",
+        "name": "СБЕР",
+        "url": "https://api.hh.ru/employers/3529",
+        "alternate_url": "https://hh.ru/employer/3529",
+        "logo_urls": {
+          "240": "https://hhcdn.ru/employer-logo/5756157.png",
+          "90": "https://hhcdn.ru/employer-logo/5756156.png",
+          "original": "https://hhcdn.ru/employer-logo-original/1033849.png"
+        },
+        "vacancies_url": "https://api.hh.ru/vacancies?employer_id=3529",
+        "trusted": true
+      },
+      "snippet": {
+        "requirement": "Следование методологии test-driven development. Опыт в Scrum/Agile, работа с JIRA и/или другими трекерами. Знание <highlighttext>Python</highlighttext>, навыки анализа...",
+        "responsibility": "Готовы изучать новые языки и технологии."
+      },
+      "contacts": null,
+      "schedule": null,
+      "working_days": [],
+      "working_time_intervals": [],
+      "working_time_modes": [],
+      "accept_temporary": false,
+      "professional_roles": [
+        {
+          "id": "96",
+          "name": "Программист, разработчик"
+        }
+      ],
+      "accept_incomplete_resumes": false,
+      "experience": {
+        "id": "between3And6",
+        "name": "От 3 до 6 лет"
+      },
+      "employment": {
+        "id": "full",
+        "name": "Полная занятость"
+      }
+    }
+  ]
+]

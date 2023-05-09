@@ -18,8 +18,9 @@ def main():
     ]
     params = config()
     vac = APIKey()
-    base = CreateBD('Vacancy_HH')
-    base.create_db(params)
+    base = CreateBD('vacancy_hh')
+    # base.create_db(params)
+
     base.create_vac_table(params)
 
     data = vac.api('Python', employers_id)

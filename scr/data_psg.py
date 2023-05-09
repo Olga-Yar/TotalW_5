@@ -134,7 +134,7 @@ class DBManager:
         with psycopg2.connect(dbname=database_name, **params) as conn:
             with conn.cursor() as cur:
                 cur.execute(f"""
-                SELECT vacancy_name, responsibility
+                SELECT vacancy_name, salary_from
                 FROM vacancies
                 WHERE vacancy_name LIKE '%{keyword}%'
                 """)

@@ -42,16 +42,9 @@ class CreateBD:
         with psycopg2.connect(dbname=self.database_name, **params) as conn:
             with conn.cursor() as cur:
                 cur.execute("""
-                CREATE TABLE employer (
-                company_id int PRIMARY KEY,
-                employer_name varchar(100)
-                )
-                """)
-
-            with conn.cursor() as cur:
-                cur.execute("""
-                CREATE TABLE vacancies (
-                company_id int PRIMARY KEY REFERENCE employer(company_id),
+                CREATE TABLE vacancies (        
+                company_id int,
+                employer_name varchar(100),
                 vacancy_name varchar(100),
                 salary_from int,
                 salary_to int,
@@ -60,7 +53,7 @@ class CreateBD:
                 )
                 """)
 
-    def insert_table(self, data, **params):
+    def insert_table(self, data: dict, params):
         """
         Заполнение таблиц данными
         :param data: response по API - вакансии по определенным параметрам с hh.ru
@@ -69,25 +62,14 @@ class CreateBD:
         """
         with psycopg2.connect(dbname=self.database_name, **params) as conn:
             with conn.cursor() as cur:
-                for employ in data:
-                    employer_data = employ['employer']
-                    cur.execute(
-                        """
-                        INSERT INTO employer (company_id, employer_name)
-                        VALUES (%s, %s)
-                        RETURNING company_id
-                        """,
-                        (employer_data['id'], employer_data['name'])
-                    )
-
-            with conn.cursor() as cur:
                 for vacancy in data:
                     cur.execute(
                         """
-                        INSERT INTO vacancies (company_id, vacancy_name, salary_from, salary_to, salary_currency, 
-                        responsibility)
-                        VALUES (%s, %s, %s, %s, %s, %s)
+                        INSERT INTO vacancies (company_id, employer_name, vacancy_name, salary_from, salary_to, 
+                        salary_currency, responsibility)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s)
                         """,
-                        (vacancy['employer']['id'], vacancy['name'], vacancy['salary']['from'], vacancy['salary']['to'],
+                        (vacancy['employer']['id'], vacancy['employer']['name'], vacancy['name'],
+                         vacancy['salary']['from'], vacancy['salary']['to'],
                          vacancy['salary']['currency'], vacancy['snippet']['responsibility'])
                     )

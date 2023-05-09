@@ -1,4 +1,5 @@
 import psycopg2
+from psycopg2 import errors
 
 
 class CreateBD:
@@ -16,20 +17,7 @@ class CreateBD:
         conn.autocommit = True
         cur = conn.cursor()
 
-        try:
-            cur.execute(f'DROP DATABASE {self.database_name}')
-            cur.execute(f'CREATE DATABASE {self.database_name}')
-        except psycopg2.errors.ObjectInUse:
-            cur.execute(f"""
-            SELECT pg_terminate_backend(pg_stat_activity.pid)
-            FROM pg_stat_activity
-            WHERE pg_stat_activity.datname = {self.database_name}
-            AND pid <> pg_backend_pid();
-                """)
-            cur.execute(f'DROP DATABASE {self.database_name}')
-            cur.execute(f'CREATE DATABASE {self.database_name}')
-        except psycopg2.errors.InvalidCatalogName:
-            cur.execute(f'CREATE DATABASE {self.database_name}')
+        cur.execute(f'CREATE DATABASE {self.database_name}')
 
         conn.close()
 
@@ -41,6 +29,7 @@ class CreateBD:
         """
         with psycopg2.connect(dbname=self.database_name, **params) as conn:
             with conn.cursor() as cur:
+                cur.execute(f'DROP TABLE vacancies')
                 cur.execute("""
                 CREATE TABLE vacancies (        
                 company_id int,

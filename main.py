@@ -40,42 +40,46 @@ def main():
 
     # Взаимодействие с пользователем
 
-    user_vacancy_count = input('Вывести список всех компаний и количество вакансий у каждой компании: [Y / N]')
+    user_vacancy_count = input('Вывести список всех компаний и количество вакансий у каждой компании: [Y / N]\n')
     user = DBManager()
     if user_vacancy_count.capitalize() == 'Y':
         vacancy = user.get_companies_and_vacancies_count(db_name, params)
         for row in vacancy:
-            print('название компании: ', row[0])
-            print('количество вакансий: ', row[1])
+            print(row[0], row[1], 'шт.')
 
-    user_all_vac = input('Список всех вакансий с указанием названия компании, названия вакансии и зарплаты,'
-                         ' и ссылки на вакансию: [Y / N]')
+    user_all_vac = input('\nСписок всех вакансий с указанием названия компании, названия вакансии и зарплаты,'
+                         ' и ссылки на вакансию: [Y / N]\n')
     if user_all_vac.capitalize() == 'Y':
-        vacancy = user.get_all_vacancies(db_name, 2, params)
+        limit = int(input('Сколько вакансий вывести: '))
+        vacancy = user.get_all_vacancies(db_name, limit, params)
         for row in vacancy:
-            print('компания: ', row[0])
+            print('__________________')
+            print('\nкомпания: ', row[0])
             print('вакансия: ', row[1])
             print('зарплата от: ', row[2])
             print('зарплата до: ', row[3])
             print('ссылка на вакансию: ', row[4])
 
-    user_avg = input('Вывести среднюю зарплату по вакансиям: [Y / N]')
+    user_avg = input('\nВывести среднюю зарплату по вакансиям: [Y / N]\n')
     if user_avg.capitalize() == 'Y':
         vacancy = user.get_avg_salary(db_name, params)
         print(vacancy)
 
-    user_high_salary = input('Вывести список всех вакансий, у которых зарплата выше средней по всем вакансиям: [Y / N]')
+    user_high_salary = input('\nВывести список всех вакансий, у которых зарплата выше средней по всем вакансиям:'
+                             ' [Y / N]\n')
     if user_high_salary.capitalize() == 'Y':
         vacancy = user.get_vacancies_with_higher_salary(db_name, params)
         for row in vacancy:
+            print('__________________')
             print('вакансия: ', row[0])
             print('зарплата от: ', row[1])
 
-    user_vac_keyword = input('Вывести список всех вакансий, в названии которых содержится слово: ')
+    user_vac_keyword = input('\nВывести список всех вакансий, в названии которых содержится слово: \n')
     vacancy = user.get_vacancies_with_keyword(db_name, user_vac_keyword, params)
     for row in vacancy:
-        print('вакансия: ', row[0])
-        print('обязанности: ', row[1])
+        print('__________________')
+        print('\nвакансия: ', row[0])
+        print('зарплата от: ', row[1])
 
 
 if __name__ == '__main__':

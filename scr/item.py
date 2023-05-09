@@ -13,7 +13,7 @@ class APIKey:
             "only_with_salary": True,
             "currency": "RUR",
             "text": keyword,
-            "per_page": 5,
+            "per_page": 100,
             "area": 113,
             "page": 0
         }

@@ -38,6 +38,8 @@ def main():
         data = vac.api(keyword, employers_id)     # подключение к hh.ru по ключу
         base.insert_table(data, params)           # заполнение данными таблицы
 
+    # Взаимодействие с пользователем
+
     user_vacancy_count = input('Вывести список всех компаний и количество вакансий у каждой компании: [Y / N]')
     user = DBManager()
     if user_vacancy_count.capitalize() == 'Y':

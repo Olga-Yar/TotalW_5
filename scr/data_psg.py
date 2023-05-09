@@ -65,6 +65,7 @@ class CreateBD:
 
 
 class DBManager:
+
     def get_companies_and_vacancies_count(self, database_name, params):
         """
         Получает список всех компаний и количество вакансий у каждой компании.

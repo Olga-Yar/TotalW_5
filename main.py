@@ -1,3 +1,6 @@
+import psycopg2
+from psycopg2 import errors
+
 from scr.config import config
 from scr.data_psg import CreateBD
 from scr.item import APIKey
@@ -19,7 +22,10 @@ def main():
     params = config()
     vac = APIKey()
     base = CreateBD('vacancy_hh')
-    # base.create_db(params)
+    try:
+        base.create_db(params)
+    except psycopg2.errors.DuplicateDatabase:
+        pass
 
     base.create_vac_table(params)
 
